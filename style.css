@@ -1,0 +1,266 @@
+/* General Body & Font Styles */
+body, h1, h2, h3, p, a {
+    font-family: 'Roboto', sans-serif; /* Or similar clean, sans-serif font */
+    color: #333; /* General dark text */
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.85); /* Slight transparency */
+    padding: 1rem 2rem;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-image: url('img/framing2.jpg'); /* Update image as needed */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+.hero .btn-primary, .hero .btn-secondary {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/* Section Spacing and Headings */
+.section-spacing {
+    padding: 4rem 0; /* Increase padding for better spacing */
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.py-5 h2 {
+    font-size: 2.5rem;
+    color: dodgerblue;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Card Styling */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 0rem;
+    font-size: 0.9rem;
+    height: 100%;
+    text-align: justify;
+}
+
+.service-card img {
+    height: 160px; /* Reduce image height to fit smaller card */
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: dodgerblue;
+}
+
+/* Light gray text color for card content */
+.card-text {
+    color: #b0b0b0; /* Light gray text */
+    margin-bottom: 1rem; /* Space above the list */
+}
+
+/* Service List Styling */
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    text-align: left;
+    margin-bottom: 0; /* Reduce space at bottom of list */
+    margin-top: auto; /* Pushes list to bottom of card */
+}
+
+.service-list li {
+    position: relative;
+    padding: 0.3rem 1rem 0.3rem 10px;
+    font-size: 0.9rem;
+    color: #555;
+    border-left: 3px solid dodgerblue;
+    border-bottom: 1px solid grey;
+}
+
+.service-list li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.2s ease;
+}
+
+.service-list li a:hover {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+/* Add '>' icon closer to each list item */
+.service-list li::after {
+    content: " >";
+    position: absolute;
+    right: 0.5rem; /* Bring icon closer to text */
+    color: #555;
+    font-weight: normal;
+}
+
+.service-list li a:hover::after {
+    color: dodgerblue;
+}
+
+/* Reduce Card Container Margins */
+.section-spacing .col-md-4 {
+    padding: 1rem 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #bbb;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+/*Cliens section*/
+/* Center images in the Clients section */
+#clients .row {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    
+}
+
+#clients .col-md-2 {
+    display: flex; /* Use flexbox on each column */
+    justify-content: center; /* Center the image within the column */
+    align-items: center; /* Center the image vertically if needed */
+    margin-bottom: 2rem; /* Add some spacing between rows if necessary */
+}
+
+#clients img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*Features*/
+.feature-item {
+    border: 2px solid #ddd; /* Light gray border around each item */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 1rem; /* Padding inside each feature item */
+    margin: 1rem 0; /* Margin between feature items */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition effect for hover */
+}
+
+.feature-item:hover {
+    box-shadow: 0 4px 10px rgba(198, 194, 194, 0.534); /* Shadow effect on hover */
+    transform: scale(1.05);
+}
+
+.feature-icon {
+    margin-bottom: 1rem; /* Space below the icon */
+}
+
+.feature-item h5 {
+    font-weight: bold; /* Bold heading for features */
+    color: dodgerblue; /* Color matching the theme */
+}
+
+
+.feature-item p {
+    color: white; /* Dark gray for paragraph text */
+}
+
+#sitemap {
+    border-top: 2px solid dodgerblue; /* Add a top border for visual separation */
+}
+
+.sitemap-links {
+    margin-bottom: 20px; /* Space below the links section */
+    text-align: left; /* Align text to the left */
+}
+
+.sitemap-links h4 {
+    margin-bottom: 1rem; /* Space below the heading */
+    color: #bbb;
+}
+
+.sitemap-links ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.sitemap-links li {
+    margin: 0.5rem 0; /* Space between list items */
+}
+
+.sitemap-links a {
+    color: dodgerblue; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.sitemap-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contact-info {
+    text-align: left; /* Align text to the left */
+}
+
+.contact-info h4 {
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.contact-info p {
+    margin: 0.5rem 0; /* Space between paragraphs */
+    color: #555; /* Gray color for text */
+}
+
+
+
