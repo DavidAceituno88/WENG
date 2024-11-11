@@ -1,18 +1,58 @@
 /* General Body & Font Styles */
 body, h1, h2, h3, p, a {
-    font-family: 'Roboto', sans-serif; /* Or similar clean, sans-serif font */
-    color: #333; /* General dark text */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
 /* Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.85); /* Slight transparency */
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 1rem 2rem;
 }
 
 .navbar-nav .nav-link {
     margin-left: 1.5rem;
     font-weight: 500;
+}
+
+/* Enable dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    transition: visibility 0.2s ease, opacity 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    background-color: rgb(35, 34, 34);
+    border-top: 3px solid dodgerblue;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown Item Styling */
+.dropdown-item {
+    color: #999; /* Darker color for better contrast */
+    padding: 0.75rem 1.5rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    color: dodgerblue;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
 }
 
 /* Hero Section */
@@ -26,19 +66,21 @@ body, h1, h2, h3, p, a {
     color: white;
     background-size: cover;
     background-position: center;
-    background-image: url('img/framing2.jpg'); /* Update image as needed */
+    background-image: url('img/framing2.jpg');
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: calc(3rem + 2vw); /* Responsive font size */
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: bold;
+    animation: fadeIn 0.5s ease-in; /* Fade-in animation */
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: calc(1rem + 0.5vw); /* Responsive font size */
     color: #ddd;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .hero .btn-primary, .hero .btn-secondary {
@@ -49,7 +91,7 @@ body, h1, h2, h3, p, a {
 
 /* Section Spacing and Headings */
 .section-spacing {
-    padding: 4rem 0; /* Increase padding for better spacing */
+    padding: 4rem 0;
 }
 
 h1, h2, h3 {
@@ -73,17 +115,18 @@ h1, h2, h3 {
     padding: 0rem;
     font-size: 0.9rem;
     height: 100%;
-    text-align: justify;
+    text-align:left;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .service-card img {
-    height: 160px; /* Reduce image height to fit smaller card */
+    height: 160px;
     object-fit: cover;
     border-radius: 1px;
 }
 
 .service-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) ;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -100,20 +143,16 @@ h1, h2, h3 {
     color: dodgerblue;
 }
 
-/* Light gray text color for card content */
 .card-text {
-    color: #b0b0b0; /* Light gray text */
-    margin-bottom: 1rem; /* Space above the list */
+    color: #b0b0b0;
+    margin-bottom: 1rem;
 }
 
 /* Service List Styling */
 .service-list {
     list-style-type: none;
     padding: 0;
-    margin-top: 1rem;
-    text-align: left;
-    margin-bottom: 0; /* Reduce space at bottom of list */
-    margin-top: auto; /* Pushes list to bottom of card */
+    margin-top: auto;
 }
 
 .service-list li {
@@ -136,13 +175,11 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-/* Add '>' icon closer to each list item */
 .service-list li::after {
     content: " >";
     position: absolute;
-    right: 0.5rem; /* Bring icon closer to text */
+    right: 0.5rem;
     color: #555;
-    font-weight: normal;
 }
 
 .service-list li a:hover::after {
@@ -168,99 +205,104 @@ footer p {
     color: #aaa;
 }
 
-/*Cliens section*/
-/* Center images in the Clients section */
+/* Clients Section */
 #clients .row {
-    display: flex; /* Use flexbox to align items */
-    justify-content: center; /* Center the items horizontally */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Centered and constrained */
+    margin: auto;
 }
 
 #clients .col-md-2 {
-    display: flex; /* Use flexbox on each column */
-    justify-content: center; /* Center the image within the column */
-    align-items: center; /* Center the image vertically if needed */
-    margin-bottom: 2rem; /* Add some spacing between rows if necessary */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 #clients img {
-    max-width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
-/*Features*/
+/* Features */
 .feature-item {
-    border: 2px solid #ddd; /* Light gray border around each item */
-    border-radius: 5px; /* Slightly rounded corners */
-    padding: 1rem; /* Padding inside each feature item */
-    margin: 1rem 0; /* Margin between feature items */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition effect for hover */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .feature-item:hover {
-    box-shadow: 0 4px 10px rgba(198, 194, 194, 0.534); /* Shadow effect on hover */
+    box-shadow: 0 4px 10px rgba(198, 194, 194, 0.534);
     transform: scale(1.05);
 }
 
 .feature-icon {
-    margin-bottom: 1rem; /* Space below the icon */
+    margin-bottom: 1rem;
 }
 
 .feature-item h5 {
-    font-weight: bold; /* Bold heading for features */
-    color: dodgerblue; /* Color matching the theme */
+    font-weight: bold;
+    color: dodgerblue;
 }
 
-
 .feature-item p {
-    color: white; /* Dark gray for paragraph text */
+    color: white;
 }
 
 #sitemap {
-    border-top: 2px solid dodgerblue; /* Add a top border for visual separation */
+    border-top: 2px solid dodgerblue;
+    padding-top: 1rem;
 }
 
 .sitemap-links {
-    margin-bottom: 20px; /* Space below the links section */
-    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .sitemap-links h4 {
-    margin-bottom: 1rem; /* Space below the heading */
+    margin-bottom: 1rem;
     color: #bbb;
 }
 
 .sitemap-links ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .sitemap-links li {
-    margin: 0.5rem 0; /* Space between list items */
+    margin: 0.5rem 0;
 }
 
 .sitemap-links a {
-    color: dodgerblue; /* Link color */
-    text-decoration: none; /* Remove underline */
+    color: dodgerblue;
+    text-decoration: none;
 }
 
 .sitemap-links a:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: #ffcc00; /* Highlighted color */
+    text-decoration: underline;
 }
 
 .contact-info {
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .contact-info h4 {
-    margin-bottom: 1rem; /* Space below the heading */
+    margin-bottom: 1rem;
 }
 
 .contact-info p {
-    margin: 0.5rem 0; /* Space between paragraphs */
-    color: #555; /* Gray color for text */
+    margin: 0.5rem 0;
+    color: #555;
 }
 
-
-
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
