@@ -251,8 +251,76 @@ footer p {
 }
 
 .feature-item p {
+    display: none; /* Initially hides the paragraph */
     color: white;
+    padding: 8px;
+    z-index: 1;
+    animation: fadeIn 0.5s ease-in;
 }
+
+.feature-item:hover p{
+    display:flex;
+    opacity: 1;
+}
+
+.feature-item:hover h5{
+    display:none;
+}
+
+.feature-item:hover .feature-icon{
+    display:none;
+}
+
+/* Advantage */
+.advantage-item {
+    
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 0.5s ease-in;
+   
+}
+
+.advantage-item:hover {
+    box-shadow: 0 4px 10px rgba(198, 194, 194, 0.534);
+    transform: scale(1.05);
+}
+
+.advantage-icon {
+    margin-bottom: 1rem;
+}
+
+.advantage-item h5 {
+    font-weight: bold;
+    color: white;
+    background-color: dodgerblue;
+    text-align: left;
+    padding-left: 7px;
+}
+
+.advantage-item p {
+    display: none; /* Initially hides the paragraph */
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 8px;
+    z-index: 1;
+    animation: fadeIn 0.5s ease-in;
+}
+
+
+.advantage-item:hover p{
+    display:flex;
+    opacity: 1;
+}
+
+.advantage-item:hover h5{
+    display:none;
+}
+
+.advantage-item:hover .advantage-icon{
+    display:none;
+}
+
 
 #sitemap {
     border-top: 2px solid dodgerblue;
@@ -305,4 +373,102 @@ footer p {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+
+/* Contact Us Section */
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.cnt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url(img/cnt-bckgnd.jpg);
+    padding: 40px 30px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    width: 90%;
+}
+
+.cnt-info {
+    
+    text-align: left;
+    background:white;
+    padding: 40px 30px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    width: 50%;
+}
+
+.cnt-info h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.cnt-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
