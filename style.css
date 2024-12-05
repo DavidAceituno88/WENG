@@ -522,17 +522,20 @@ footer p {
 
 
 /** Accordian**/
+/* Category Container */
 .category_container {
     --gap: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Keep nowrap by default */
     gap: calc(var(--gap) * 2);
     width: 100%;
     height: 100%;
-  }
-  .content {
+}
+
+/* Content */
+.content {
     --active: 0;
     cursor: pointer;
     overflow: clip;
@@ -547,12 +550,14 @@ footer p {
     height: 100%;
     border-radius: 1rem;
     transition: width 0.5s ease-in-out;
-  }
-  .content:hover {
+}
+
+.content:hover {
     --active: 1;
     width: calc(70% - var(--gap));
-  }
-  .content::before {
+}
+
+.content::before {
     content: "";
     position: absolute;
     z-index: -10;
@@ -562,81 +567,89 @@ footer p {
     height: 100%;
     background-color: var(--dark);
     opacity: 0.6;
-  }
-  .content img {
+}
+
+.content img {
     position: absolute;
     z-index: -20;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
-  }
-  .content .profile_image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.content .profile_image {
     opacity: calc(1 - var(--active));
     transition: opacity 0.3s ease-in-out;
-  }
-  .profile_detail {
+}
+
+.profile_detail {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 100%;
     transition: transform 0.5s cubic-bezier(0.23, 0.93, 0.77, 1) 0.01s;
-  }
-  .profile_detail span {
+}
+
+.profile_detail span {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--light);
     text-wrap: nowrap;
-    background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
-    border-radius: 10px; /* Optional, for rounded corners */
-    padding: 1rem; /* Optional, to add space inside */
-  }
-  .profile_detail p {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.profile_detail p {
     font-size: 0.75rem;
     font-weight: 500;
     color: var(--light);
-  }
-  .profile_quote {
+}
+
+.profile_quote {
     width: 22rem;
     transform: translate(0, calc((1 - var(--active)) * (100% + 2.5rem)));
-    background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
-    border-radius: 10px; /* Optional, for rounded corners */
-    padding: 1rem; /* Optional, to add space inside */
-    
-  }
-  .profile_quote p {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.profile_quote p {
     font-size: 1rem;
     font-weight: 600;
     color: var(--light);
     transform: translate(0, calc((1 - var(--active)) * (100% + 2.5rem)));
     transition: transform 0.5s cubic-bezier(0.23, 0.93, 0.77, 1) 0.1s;
-  }
-  .wrapper {
+}
+
+.wrapper {
     display: grid;
     grid-template-rows: 0fr;
     overflow: hidden;
     transition: grid-template-rows 0.5s cubic-bezier(0.23, 0.93, 0.77, 1) 0.01s;
-    transition: grid-template-rows 0.5s cubic-bezier(0.23, 0.93, 0.77, 1) 0.01s, -ms-grid-rows 0.5s cubic-bezier(0.23, 0.93, 0.77, 1) 0.01s;
-  }
-  .profile_quote {
+}
+
+.profile_quote {
     min-height: 0;
     transform: translateY(50%);
     opacity: 0;
     transition: opacity 0.8s ease-in-out, transform 0.8s cubic-bezier(0.23, 0.93, 0.77, 1) 0.01s;
-  }
-  .content:hover .wrapper {
+}
+
+.content:hover .wrapper {
     grid-template-rows: 1fr;
-  }
-  .content:hover .profile_quote {
+}
+
+.content:hover .profile_quote {
     transform: none;
     opacity: 1;
-  }
+}
 
-  .containerA {
+/* Base Styles for Containers */
+.containerA, .containerAH {
     --bg-color: radial-gradient(
         circle at 50% 0%,
         rgba(50, 50, 50, 1) 0%,
@@ -651,27 +664,87 @@ footer p {
     width: 100%;
     height: 100dvh;
     background-image: var(--bg-color);
-    
-  }
+}
 
-  .containerAH {
-    --bg-color: radial-gradient(
-        circle at 50% 100%,
-        rgba(50, 50, 50, 1) 0%,
-        rgba(12, 12, 12, 1) 100%
-    );
-    overflow: clip;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 5rem;
-    width: 100%;
-    height: 100dvh;
-    background-image: var(--bg-color);
-    
-  }
-
-  .containerAH h2{
+/* Text color for headings in containerAH */
+.containerAH h2 {
     color: dodgerblue;
-  }
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 1024px (tablets and small screens) */
+@media (max-width: 1024px) {
+    .category_container {
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+
+    .content {
+        width: calc(50% - var(--gap)); /* Two columns */
+        padding: 1.5rem; /* Reduce padding */
+    }
+
+    .content:hover {
+        width: calc(60% - var(--gap)); /* Less wide on hover */
+    }
+
+    .containerA, .containerAH {
+        padding: 2rem 3rem; /* Reduce padding */
+    }
+}
+
+/* For screens smaller than 768px (small tablets and phones in landscape mode) */
+@media (max-width: 768px) {
+    .category_container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center content */
+    }
+
+    .content {
+        width: calc(100% - var(--gap)); /* Full width for each item */
+        padding: 1.5rem; /* Reduced padding */
+    }
+
+    .content:hover {
+        width: 100%; /* Full width on hover */
+    }
+
+    .profile_quote {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .containerA, .containerAH {
+        padding: 1.5rem 2rem; /* Further reduce padding */
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+
+/* For screens smaller than 480px (mobile screens) */
+@media (max-width: 480px) {
+    .category_container {
+        flex-direction: column; /* Stack vertically */
+        gap: 1rem; /* Smaller gap */
+    }
+
+    .content {
+        width: calc(100% - var(--gap)); /* Full width for each item */
+        padding: 1rem; /* Smaller padding */
+    }
+
+    .content:hover {
+        width: 100%; /* Full width on hover */
+    }
+
+    .profile_quote p {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .containerA, .containerAH {
+        padding: 1rem 1.5rem; /* Minimal padding for mobile */
+    }
+
+    .containerAH h2 {
+        font-size: 1.5rem; /* Reduce font size for small screens */
+    }
+}
