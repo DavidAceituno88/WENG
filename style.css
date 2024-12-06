@@ -128,6 +128,56 @@ body, h1, h2, h3, p, a {
     margin: 0 0.5rem;
 }
 
+/* HeroA Section */
+.heroA {
+    padding-top: 70px;
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-image: url('img/access/1000011667.jpg');
+}
+
+.heroA h1 {
+    font-size: calc(3rem + 2vw); /* Responsive font size */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in; /* Fade-in animation */
+}
+
+.heroA p {
+    font-size: calc(1rem + 0.5vw); /* Responsive font size */
+    color: #ddd;
+    animation: fadeIn 0.5s ease-in;
+    background-color: rgba(16, 16, 16, 0.5) ;
+}
+
+.heroA .btn-primary, .hero .btn-secondary {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/*Carousel*/
+.carousel-image {
+    width: 100%; /* Ensures the image spans the width of the carousel */
+    height: 400px; /* Or any height that fits your design */
+    object-fit: contain; /* Ensures the entire image is visible */
+    background-color: #f0f0f0; /* Optional: Adds a background color to fill empty space */
+}
+
+@media (max-width: 768px) {
+    .carousel-image {
+        max-height: 50vh; /* Limits image height on smaller screens */
+    }
+}
+
 /* Section Spacing and Headings */
 .section-spacing {
     padding: 4rem 0;
@@ -139,10 +189,18 @@ h1, h2, h3 {
 }
 
 .py-5 h2 {
-    padding-top: 70px;
+    padding-top: 20px;
     font-size: 2.5rem;
     color: dodgerblue;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Add smaller padding for mobile screens */
+@media (max-width: 768px) {
+    .py-5 h2 {
+        padding-top:100px; /* Reduce padding for smaller screens */
+        font-size: 2rem; /* Optional: Adjust font size if needed */
+    }
 }
 
 /* Service Card Styling */
@@ -683,8 +741,8 @@ footer p {
 }
 
 /* Base Styles for Containers */
- .containerAH {
-     --bg-color: radial-gradient(
+.containerAH {
+    --bg-color: radial-gradient(
         circle at 50% 100%,
         rgba(50, 50, 50, 1) 0%,
         rgba(12, 12, 12, 1) 100%
@@ -698,8 +756,9 @@ footer p {
     width: 100%;
     height: 100dvh;
     background-image: var(--bg-color);
- }
-.containerA {
+}
+
+.containerA{
     --bg-color: radial-gradient(
         circle at 50% 0%,
         rgba(50, 50, 50, 1) 0%,
