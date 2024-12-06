@@ -1,22 +1,55 @@
 /* General Body & Font Styles */
+body {
+    padding-top: 10px;
+}
+
 body, h1, h2, h3, p, a {
     font-family: 'Roboto', sans-serif;
     color: #333;
 }
 
-/* Navbar */
+/* Navbar Styling */
 .navbar {
     background-color: rgba(0, 0, 0, 0.85);
     padding: 1rem 2rem;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
-    z-index: 10000; 
+    z-index: 10000;
 }
 
 .navbar-nav .nav-link {
     margin-left: 1.5rem;
     font-weight: 500;
+}
+
+/* Navbar brand (logo) */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Hamburger Menu */
+.navbar-toggler {
+    border: none; /* Remove border */
+    background-color: transparent; /* Ensure it blends with the navbar */
+}
+
+/* Menu items align to the right */
+.navbar-nav {
+    margin-left: auto; /* Push nav items to the right */
+}
+
+/* For large screens, keep the hamburger menu off and keep the navbar links visible */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: flex-end;
+    }
+    .navbar-toggler {
+        display: none; /* Hide the hamburger on large screens */
+    }
 }
 
 /* Enable dropdown on hover */
@@ -58,6 +91,7 @@ body, h1, h2, h3, p, a {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
 }
+
 
 /* Hero Section */
 .hero {
@@ -671,6 +705,33 @@ footer p {
     color: dodgerblue;
 }
 
+
+    /* Add spacing from the navbar for large screens */
+    @media (min-width: 992px) {
+        .py-5 {
+            padding-top: 80px !important;
+            padding-bottom: 80px !important;
+            margin-top: 10px;
+        }
+    }
+
+    /* For smaller screens (tablet and below) */
+    @media (max-width: 992px) {
+        .py-5 {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+            margin-top: 10px;
+        }
+    }
+
+    /* For mobile screens */
+    @media (max-width: 768px) {
+        .py-5 {
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+            margin-top: 10px;
+        }
+    }
 /* Media Queries for Responsiveness */
 
 /* For screens smaller than 1024px (tablets and small screens) */
