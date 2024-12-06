@@ -701,7 +701,7 @@ footer p {
  }
 .containerA {
     --bg-color: radial-gradient(
-        circle at 0% 50%,
+        circle at 50% 0%,
         rgba(50, 50, 50, 1) 0%,
         rgba(12, 12, 12, 1) 100%
     );
