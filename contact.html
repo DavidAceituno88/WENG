@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Company</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM2E85/5g0t1eI5R0AT6r8mo7G8hf/F+9gH6k+6" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"> <!-- Link to the external CSS file -->
+</head>
+<body style="background-color: #eee;">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/Logo_Website_Transparent.webp" alt="WellEngineered" width="60%" height="60%" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                
+                <!-- Services Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="lifting.html">Lifting & Handling Devices</a></li>
+                        <li><a class="dropdown-item" href="designbuild.html">Design/Build Construction</a></li>
+                        <li><a class="dropdown-item" href="industrial.html">Industrial Equipment & Structures</a></li>
+                        <li><a class="dropdown-item" href="access.html">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="offshore.html">Offshore/Hazardous Locations</a></li>
+                        <!-- Add more services as needed -->
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="heroC">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out for inquiries, support, or quotes.</p>
+</section>
+
+
+
+
+<section class="contact">
+    <div class="container">
+        <div class="form-container">
+          <div class="left-container">
+            <div class="left-inner-container">
+            <h1>Ready to start a project, ask a question, or simply connect?</h1>
+           
+          </div>
+            </div>
+            <div class="right-container">
+                    <div class="right-inner-container">
+                        <form action="mailto:sales@wellengineered.ca" method="POST" enctype="text/plain">
+                                
+                                <h2 class="sm-view">Let's Chat</h2>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                                <label for="name">Name<i>(*required)</i></label>  
+                                <input type="text" id="name" name="name" required>
+                                <label for="email">Email<i>(*required)</i></label>  
+                                <input type="email" id="email" name="email" required>
+                                <label for="phone">Phone</label>  
+                                <input type="tel" id="phone" name="phone">
+                                <label for="Message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                                <button class="btn btn-primary mt-3">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+        </div>
+      </div>
+</section>
+
+<!-- Include Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<section class="contact-info">
+  <div class="contact-details">
+    <div class="left-inner-container">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Reach out for project inquiries, questions, or collaborations.</p>
+    </div>
+    <div class="contact-details-info">
+      <div class="contact-item">
+        <i class="bi bi-telephone-fill"></i>
+        <p><strong>Phone:</strong><a href="tel:+1234567890" class="call-link">+1 (234) 567-890</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p><strong>Address:</strong> 121 Ilsley Ave unit 114, Dartmouth</p>
+      </div>
+      <div class="contact-item">
+        <i class="bi bi-envelope-fill"></i>
+        <p><strong>Email:</strong>  <a href="sales@wellengineered.ca" class="email-link">sales@wellengineered.ca</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11344.388316924284!2d-63.5835808!3d44.6972169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5986229483748f%3A0xb58689b3e27b36fb!2sWell%20Engineered%20Incorporated!5e0!3m2!1ses!2sca!4v1733877905803!5m2!1ses!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+</body>
+</html>
+
+

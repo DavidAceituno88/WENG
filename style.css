@@ -456,6 +456,7 @@ footer p {
 
 .contact-info {
     text-align: left;
+    
 }
 
 .contact-info h4 {
@@ -884,3 +885,267 @@ footer p {
         font-size: 1.5rem; /* Reduce font size for small screens */
     }
 }
+
+/*Contact style*/
+
+/* Hero Section */
+.heroC {
+    background: dodgerblue;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10px;
+    background-image: url('img/industrial/COMMISSIONING.png');
+    background-size: cover;     /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    height: 50vh;   
+    filter: grayscale(100%); 
+}
+
+.heroC h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white    ;
+    text-shadow: #666;
+}
+
+.heroC p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: #666;
+}
+
+
+
+/*Contact us*/
+.contact {
+    background-color: #eee;
+}
+
+.form-container {
+  display:flex;
+  background-color: #eee;
+  padding: 20px;
+}
+
+
+
+.left-container {
+  flex:1;
+  height:480px;
+  background-color: #eee;
+}
+.right-container {
+  display:flex;
+  flex:1;
+  height:100%;
+  justify-content:center;
+  align-items:center;
+  background-color: white;
+}
+
+.left-container {
+  display:flex;
+  flex:1;
+  height:480px;
+  justify-content:center;
+  align-items:center;
+}
+
+.left-container p {
+  font-size:0.9rem;
+}
+
+.right-inner-container {
+  width:70%;
+  height:100%;
+  padding-top: 10px;
+  text-align:center;
+}
+
+form label {
+    display: block;      /* Ensures left alignment */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;    /* Forces label alignment */
+  }
+
+  form i {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #ff0f0f;
+    margin-left: 5px;
+  }
+
+.left-inner-container {
+  height:50%;
+  width:80%;
+  text-align:center;
+  line-height:22px;
+}
+
+.left-inner-container h1{
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-top: 2px;
+    font-size: 50px;
+    color: dodgerblue;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.left-inner-container p{
+    font-weight:600;
+    margin-bottom: 1.5rem;
+    padding-top: 40px;
+    font-size: 15px;
+    text-align: left;
+    color:#666;
+}
+
+input, textarea {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+    font-size:0.8rem;
+}
+
+input:focus, textarea:focus{
+  outline:1px 
+}
+
+button:hover {
+  opacity:0.7;
+}
+@media only screen and (max-width: 600px) {
+  .left-container{
+    display: none;
+  }
+  .lg-view {
+    display:none;  
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display:none;  
+  }
+}
+
+form p {
+  text-align:left;
+}
+
+
+/* Contact Section */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Added gap for better separation */
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Details */
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .left-inner-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: dodgerblue;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .left-inner-container p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .contact-details-info {
+    margin-top: 20px;
+    
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-item i {
+    font-size: 28px;
+    color: dodgerblue;
+    margin-right: 15px;
+  }
+  
+  .contact-item p {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+
+
+  /* Google Map */
+  .google-map {
+    flex: 1;
+    max-width: 600px;
+    height: 500px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .google-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Mobile Responsiveness */
+  @media only screen and (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+    }
+  
+    .google-map {
+      height: 300px;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Additional Hover and Focus Effects */
+  .contact-item:hover i {
+    color: #0056b3;
+  }
+  
+  .contact-item:hover p {
+    color: #0056b3;
+  }
+  
