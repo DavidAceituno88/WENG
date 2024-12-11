@@ -916,7 +916,26 @@ footer p {
     text-shadow: #666;
 }
 
+/* Responsive Padding Adjustments */
+@media (max-width: 768px) {
+    .heroC h1, 
+    .heroC p {
+        padding-top: 8rem;
+    }
+}
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .heroC h1 {
+        font-size: 2rem;   /* Smaller font size */
+        margin-bottom: 0; /* Reduced space below */
+    }
+
+    .heroC p {
+        font-size: 1rem;   /* Smaller font size */
+        margin-top: 0;     /* Remove extra space */
+    }
+}
 
 /*Contact us*/
 .contact {
