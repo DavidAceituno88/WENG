@@ -180,6 +180,21 @@ body, h1, h2, h3, p, a {
     }
 }
 
+/* Custom styles for the carousel control buttons */
+
+
+
+
+/* Style for the icons (arrows) */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black; /* Icon color */
+    border-radius: 10%; /* Round icons */
+    width: 40px; /* Icon size */
+    height: 40px; /* Icon size */
+}
+
+
+
 /*Hero for FA*/
 .heroFA {
     position: relative;
