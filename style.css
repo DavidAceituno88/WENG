@@ -105,7 +105,7 @@ body, h1, h2, h3, p, a {
     color: white;
     background-size: cover;
     background-position: center;
-    background-image: url('img/framing2.jpg');
+    background-image: url('img/industrial/imp.jpg');
 }
 
 .hero h1 {
@@ -120,6 +120,7 @@ body, h1, h2, h3, p, a {
     font-size: calc(1rem + 0.5vw); /* Responsive font size */
     color: #ddd;
     animation: fadeIn 0.5s ease-in;
+    background-color: rgba(16, 16, 16, 0.5) ;
 }
 
 .hero .btn-primary, .hero .btn-secondary {
@@ -454,6 +455,10 @@ footer p {
 .sitemap-links a:hover {
     color: #ffcc00; /* Highlighted color */
     text-decoration: underline;
+}
+
+.contact-info1 p{
+    color: white;
 }
 
 .contact-info {

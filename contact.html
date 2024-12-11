@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM2E85/5g0t1eI5R0AT6r8mo7G8hf/F+9gH6k+6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     <link href="style.css" rel="stylesheet"> <!-- Link to the external CSS file -->
+    <script src="mail.js"></script>
 </head>
 <body style="background-color: #eee;">
 
@@ -63,7 +64,7 @@
             </div>
             <div class="right-container">
                     <div class="right-inner-container">
-                        <form action="mailto:sales@wellengineered.ca" method="POST" enctype="text/plain">
+                        <form id = "contactform">
                                 
                                 <h2 class="sm-view">Let's Chat</h2>
                                 <div class="social-container">
@@ -79,7 +80,7 @@
                                 <input type="tel" id="phone" name="phone">
                                 <label for="Message">Message</label>
                                 <textarea id="message" name="message" rows="4" required></textarea>
-                                <button class="btn btn-primary mt-3">Submit</button>
+                                <button class="btn btn-primary mt-3" type="submit">Submit</button>
                             </form>
                         </div>
                     </div>
