@@ -1,0 +1,202 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+  }
+  
+  .left-column {
+    width: 70%;
+    position: relative;
+    padding-top: 10px;
+  }
+  
+  .right-column {
+    padding-right: 20px;
+    width: 40%;
+    margin-top: 60px;
+  }
+  
+ /*Carousel*/
+
+.carousel-image {
+    
+    width: 100%; /* Ensures the image spans the width of the carousel */
+    height: 400px; /* Or any height that fits your design */
+    object-fit: contain; /* Ensures the entire image is visible */
+    background-color: #f0f0f0; /* Optional: Adds a background color to fill empty space */
+}
+
+@media (max-width: 768px) {
+    .carousel-image {
+        max-height: 50vh; /* Limits image height on smaller screens */
+    }
+}
+
+/* Custom styles for the carousel control buttons */
+/* Style for the icons (arrows) */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.674); /* Icon color */
+    border-radius: 10%; /* Round icons */
+    width: 40px; /* Icon size */
+    height: 40px; /* Icon size */
+}
+
+/* Carousel Thumbnails */
+.carousel-thumbnails {
+    margin-top: 10px; /* Space between carousel and thumbnails */
+    align-items: center;
+
+}
+
+.thumbnail-img {
+    width: 60px; /* Adjust to your preferred size */
+    height: 60px; /* Same as width to maintain square aspect */
+    object-fit: cover; /* Ensures image is cropped appropriately */
+    cursor: pointer; /* Indicates the image is clickable */
+    transition: transform 0.3s ease; /* Smooth transition effect on hover */
+}
+
+.thumbnail-img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 0.8; /* Slight fade effect on hover */
+}
+
+.thumbnail-img.active {
+    border: 2px solid #007bff; /* Highlight the active thumbnail */
+}
+
+/* Custom modal styles */
+#imageModal .modal-dialog {
+    max-width: 90%; /* Make the modal larger */
+}
+
+/* Custom size for modal image */
+
+#imageModal .modal-body img {
+    width: 60%;   /* Set to your desired width */
+    max-height: 80vh; /* Prevents overflow of the screen */
+    object-fit: contain; /* Keeps the aspect ratio */
+    margin: auto; /* Centers the image */
+    display: block; /* Centers the image */
+}
+
+
+/* Default state */
+/* Adjust image behavior */
+#modalImage {
+    display: block;
+    max-width: none; /* Allow the image to exceed the modal width */
+    max-height: none; /* Allow the image to exceed the modal height */
+    width: auto;
+    height: auto;
+}
+
+/* Handle zoom levels */
+.zoom-level-reset {
+    transform: scale(1);
+    cursor: zoom-in;
+}
+
+.zoom-level-1 {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+.zoom-level-2 {
+    transform: scale(2);
+    cursor: zoom-out;
+}
+
+
+  
+  .product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+  }
+
+  .product-description span {
+    font-size: 12px;
+    color: #358ED7;
+    text-transform: uppercase;
+  }
+  .product-description h1 {
+    font-weight: 300;
+    font-size: 52px;
+    color: #43484D;
+  }
+  .product-description p {
+    font-size: 16px;
+    color: #86939E;
+    line-height: 24px;
+  }
+  
+  .product-price {
+    display: flex;
+    align-items: center;
+  }
+  .product-price span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+  }
+  .cart-btn {
+    background-color: #7DC855;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: all .5s;
+  }
+  .cart-btn:hover {
+    background-color: #64af3d;
+  }
+  
+  @media (max-width: 940px) {
+    .container {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+  
+    .left-column, .right-column {
+      width: 100%;
+    }
+  }
+
+
+  /* Prev and Next buttons */
+.prev-next-btn {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+  }
+  
+  .prev-next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .prev {
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .next {
+    right: 0;
+    transform: translateY(-50%);
+  }
