@@ -93,12 +93,14 @@
   
 
   </body>
+    <script>L
     document.querySelectorAll('.carousel-image').forEach(img => {
     img.addEventListener('click', function () {
         const modalImage = document.getElementById('modalImage');
         modalImage.src = this.getAttribute('data-img-src');
     });
 });
+    </script>
   </html>
 
   
