@@ -132,7 +132,7 @@ html, body {
     font-size: 52px;
     color: #43484D;
   }
-  .product-description p {
+  .product-description p , li{
     font-size: 16px;
     color: #86939E;
     line-height: 24px;
