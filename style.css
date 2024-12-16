@@ -404,14 +404,15 @@ footer p {
 }
 
 .slideC {
-    min-width: 33.33%;
+    min-width: 20%;
     box-sizing: border-box;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .slideC img {
-    width: 80%;
-    max-height: 80%;
+    width: 70%;
+    
     height: auto;
     display: block;
     border-radius: 10px;
