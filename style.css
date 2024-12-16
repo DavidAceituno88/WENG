@@ -1235,3 +1235,60 @@ form p {
     color: #0056b3;
   }
   
+
+  /*About us style*/
+  .lead {
+    font-size: 1rem;  /* Larger font size for emphasis */
+    font-weight: 300;    /* Light weight for a clean look */
+    color: #bbb;         /* Neutral text color */
+    line-height: 1.6;    /* Improved readability */
+    margin-bottom: 4rem; /* Consistent spacing */
+    }
+
+    .aboutp {
+    color: #bbb;
+    }
+
+
+.team-section {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.team-card {
+    
+    width: 280px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.gap-4 {
+    gap: 1.5rem;
+}
+
+.team-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-card h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    font-size: .90rem;
+    line-height: 1.6;
+}
