@@ -411,10 +411,10 @@ footer p {
 }
 
 .slideC img {
-    width: 70%;
     
-    height: auto;
-    display: block;
+    width: 80%;
+   
+    display:block;
     border-radius: 10px;
 }
 
