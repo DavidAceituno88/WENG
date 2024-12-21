@@ -130,6 +130,25 @@ body, h1, h2, h3, p, a {
     margin: 0 0.5rem;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .hero .btn-primary, .hero .btn-secondary {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        margin: 0 0.3rem;
+    }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+    .hero .btn-primary, .hero .btn-secondary {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 0 0.2rem;
+    }
+}
+
+
 /* HeroA Section */
 .heroA {
     padding-top: 70px;
@@ -160,11 +179,44 @@ body, h1, h2, h3, p, a {
     background-color: rgba(16, 16, 16, 0.5) ;
 }
 
-.heroA .btn-primary, .hero .btn-secondary {
+.heroA .btn-primary, .heroA .btn-secondary {
     font-size: 1.1rem;
     padding: 0.7rem 1.5rem;
     margin: 0 0.5rem;
 }
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .heroA .btn-primary, 
+    .heroA .btn-secondary {
+        font-size: 1rem;
+        padding: 0.6rem 1.3rem;
+        margin: 0.4rem;
+    }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+    .heroA .btn-primary, 
+    .heroA .btn-secondary {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem;
+        width: 100%; /* Full-width on small screens */
+        text-align: center;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 576px) {
+    .heroA .btn-primary, 
+    .heroA .btn-secondary {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+        margin: 0.2rem;
+    }
+}
+
 
 /* Design Build Construction hero */
 .heroCon {
@@ -198,7 +250,7 @@ body, h1, h2, h3, p, a {
 }
 
 .heroCon .btn-primary, 
-.hero .btn-secondary {
+.heroCon .btn-secondary {
     font-size: 1.1rem;
     padding: 0.7rem 1.5rem;
     margin: 0 0.5rem;
@@ -207,7 +259,7 @@ body, h1, h2, h3, p, a {
 /* Medium Screens (Tablets) */
 @media (max-width: 992px) {
     .heroCon .btn-primary, 
-    .hero .btn-secondary {
+    .heroCon .btn-secondary {
         font-size: 1rem;
         padding: 0.6rem 1.3rem;
         margin: 0.4rem;
@@ -217,7 +269,7 @@ body, h1, h2, h3, p, a {
 /* Small Screens (Phones) */
 @media (max-width: 768px) {
     .heroCon .btn-primary, 
-    .hero .btn-secondary {
+    .heroCon .btn-secondary {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
         margin: 0.3rem;
@@ -229,7 +281,7 @@ body, h1, h2, h3, p, a {
 /* Extra Small Screens */
 @media (max-width: 576px) {
     .heroCon .btn-primary, 
-    .hero .btn-secondary {
+    .heroCon .btn-secondary {
         font-size: 0.85rem;
         padding: 0.4rem 0.8rem;
         margin: 0.2rem;
@@ -291,6 +343,45 @@ body, h1, h2, h3, p, a {
     text-align: center;
     color: white;
     overflow: hidden;
+}
+
+.heroFA .btn-primary, 
+.heroFA .btn-secondary {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .heroFA .btn-primary, 
+    .heroFA .btn-secondary {
+        font-size: 1rem;
+        padding: 0.6rem 1.3rem;
+        margin: 0.4rem;
+    }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+    .heroFA .btn-primary, 
+    .heroFA .btn-secondary {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem;
+        width: 100%; /* Full-width on small screens */
+        text-align: center;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 576px) {
+    .heroFA .btn-primary, 
+    .heroFA .btn-secondary {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+        margin: 0.2rem;
+    }
 }
 
 /* Full-screen Video */
