@@ -1127,7 +1127,7 @@ footer p {
         }
     }
 
-    .containerAH .btn-primary
+.containerAH .btn-primary
          {
     font-size: 1.1rem;
     padding: 0.7rem 1.5rem;
@@ -1148,6 +1148,36 @@ footer p {
 @media (max-width: 768px) {
     .containerAH .btn-primary, 
     .containerAH .btn-secondary {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem;
+        width: 100%; /* Full-width on small screens */
+        text-align: center;
+    }
+}
+
+/*Container buttons general*/
+.container .btn-primary
+         {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .container .btn-primary, 
+    .container .btn-secondary {
+        font-size: 1rem;
+        padding: 0.6rem 1.3rem;
+        margin: 0.4rem;
+    }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+    .container .btn-primary, 
+    .container .btn-secondary {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
         margin: 0.3rem;
