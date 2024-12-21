@@ -19,6 +19,7 @@ body, h1, h2, h3, p, a {
     z-index: 10000;
 }
 
+
 .navbar-nav .nav-link {
     margin-left: 1.5rem;
     font-weight: 500;
@@ -1125,6 +1126,36 @@ footer p {
             margin-top: 10px;
         }
     }
+
+    .containerAH .btn-primary
+         {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .containerAH .btn-primary, 
+    .containerAH .btn-secondary {
+        font-size: 1rem;
+        padding: 0.6rem 1.3rem;
+        margin: 0.4rem;
+    }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+    .containerAH .btn-primary, 
+    .containerAH .btn-secondary {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem;
+        width: 100%; /* Full-width on small screens */
+        text-align: center;
+    }
+}
+    
 /* Media Queries for Responsiveness */
 
 /* For screens smaller than 1024px (tablets and small screens) */
