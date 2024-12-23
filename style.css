@@ -1709,3 +1709,97 @@ form p {
         font-size: var(--font-size-6);
     }
 }
+
+
+/*Gallery for the Access page*/
+.gallery {
+    padding: 5%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+}
+
+.main-image {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers image vertically */
+    height: 400px; /* Set a fixed height for the main image container */
+    overflow: hidden;
+    width: 100%;
+}
+
+.images {
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Centers images vertically */
+    height: 100%;
+    width: 100%;
+}
+
+.slider-image {
+    max-width: 100%; /* Ensure image scales correctly */
+    max-height: 100%; /* Prevent overflow */
+    object-fit: contain; /* Keep aspect ratio and fit within the container */
+    display: none; /* Hide all images by default */
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:nth-of-type(1):checked ~ .images img:nth-of-type(1) {
+    display: block; /* Show the first image when checked */
+}
+
+input[type="radio"]:nth-of-type(2):checked ~ .images img:nth-of-type(2) {
+    display: block; /* Show the second image when checked */
+}
+
+input[type="radio"]:nth-of-type(3):checked ~ .images img:nth-of-type(3) {
+    display: block; /* Show the third image when checked */
+}
+
+input[type="radio"]:nth-of-type(4):checked ~ .images img:nth-of-type(4) {
+    display: block; /* Show the fourth image when checked */
+}
+
+input[type="radio"]:nth-of-type(5):checked ~ .images img:nth-of-type(5) {
+    display: block; /* Show the fifth image when checked */
+}
+
+input[type="radio"]:nth-of-type(6):checked ~ .images img:nth-of-type(6) {
+    display: block; /* Show the sixth image when checked */
+}
+
+input[type="radio"]:nth-of-type(7):checked ~ .images img:nth-of-type(7) {
+    display: block; /* Show the seventh image when checked */
+}
+
+input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
+    display: block; /* Show the eighth image when checked */
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
