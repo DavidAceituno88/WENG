@@ -489,12 +489,22 @@ h1, h2, h3 {
     flex-direction: column;
 }
 
-.card-title {
+.card-title a {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: dodgerblue;
+    text-decoration: none;
 }
+
+.card-title a:hover {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: grey;
+    text-decoration: none;
+}
+
 
 .card-text {
     color: #b0b0b0;
