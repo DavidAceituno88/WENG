@@ -1721,10 +1721,10 @@ form p {
 }
 
 
-/*Gallery for the Access page*/
+/* Gallery for the Access page */
 .gallery {
     padding: 5%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     position: relative;
     display: flex;
@@ -1733,78 +1733,77 @@ form p {
     justify-content: center; /* Centers content vertically */
 }
 
+/* Main Image Container */
 .main-image {
     position: relative;
     display: flex;
     justify-content: center; /* Centers image horizontally */
     align-items: center; /* Centers image vertically */
-    height: 400px; /* Set a fixed height for the main image container */
+    height: 400px; /* Default height */
     overflow: hidden;
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .main-image {
+        height: 300px; /* Smaller height on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-image {
+        height: 200px; /* Smaller height on mobile */
+    }
+}
+
+/* Image Slider */
 .images {
     display: flex;
-    justify-content: center; /* Centers images horizontally */
-    align-items: center; /* Centers images vertically */
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
 
 .slider-image {
-    max-width: 100%; /* Ensure image scales correctly */
-    max-height: 100%; /* Prevent overflow */
-    object-fit: contain; /* Keep aspect ratio and fit within the container */
-    display: none; /* Hide all images by default */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: none;
 }
 
+/* Radio Buttons for Slider */
 input[type="radio"] {
     display: none;
 }
 
 input[type="radio"]:nth-of-type(1):checked ~ .images img:nth-of-type(1) {
-    display: block; /* Show the first image when checked */
+    display: block;
 }
 
 input[type="radio"]:nth-of-type(2):checked ~ .images img:nth-of-type(2) {
-    display: block; /* Show the second image when checked */
+    display: block;
 }
 
 input[type="radio"]:nth-of-type(3):checked ~ .images img:nth-of-type(3) {
-    display: block; /* Show the third image when checked */
+    display: block;
 }
 
-input[type="radio"]:nth-of-type(4):checked ~ .images img:nth-of-type(4) {
-    display: block; /* Show the fourth image when checked */
-}
+/* Add more as needed */
 
-input[type="radio"]:nth-of-type(5):checked ~ .images img:nth-of-type(5) {
-    display: block; /* Show the fifth image when checked */
-}
-
-input[type="radio"]:nth-of-type(6):checked ~ .images img:nth-of-type(6) {
-    display: block; /* Show the sixth image when checked */
-}
-
-input[type="radio"]:nth-of-type(7):checked ~ .images img:nth-of-type(7) {
-    display: block; /* Show the seventh image when checked */
-}
-
-input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
-    display: block; /* Show the eighth image when checked */
-}
-
+/* Thumbnail Navigation */
 .thumbnails {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    flex-wrap: wrap; /* Allow thumbnails to wrap on smaller screens */
 }
 
 .thumbnail {
     width: 60px;
     height: 60px;
     object-fit: cover;
-    margin: 0 5px;
+    margin: 5px;
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 0.3s ease;
@@ -1813,6 +1812,21 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
 .thumbnail:hover {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 
 
 /*Project Gallery*/
