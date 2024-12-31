@@ -21,18 +21,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#products">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="industrialprd.html">Industrial Equipment</a></li>
+                        <li><a class="dropdown-item" href="aviationprd.html">Aviation</a></li>
+                        <li><a class="dropdown-item" href="othersprd.html">Other</a></li>
+                        <!-- Add more services as needed -->
+                    </ul>
+                </li>
                 <!-- Services Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="lifting.html">Lifting & Handling Devices</a></li>
-                        <li><a class="dropdown-item" href="designbuild.html">Design/Build Construction</a></li>
-                        <li><a class="dropdown-item" href="industrial.html">Industrial Equipment & Structures</a></li>
                         <li><a class="dropdown-item" href="access.html">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="industrial.html">Industrial Equipment & Structures</a></li>
                         <li><a class="dropdown-item" href="fa.html">Factory Automation</a></li>
+                        <li><a class="dropdown-item" href="designbuild.html">Design/Build Construction</a></li>
+                        <li><a class="dropdown-item" href="lifting.html">Lifting & Handling Devices</a></li>
                         <li><a class="dropdown-item" href="offshore.html">Offshore/Hazardous Locations</a></li>
                         <!-- Add more services as needed -->
                     </ul>
@@ -65,7 +75,7 @@
             <!-- Carousel Column -->
             <div class="col-md-6">
                 <h2>Well Designed. Well Built.<br> Well Engineered.</h2>
-                <p>Well Engineered is a Halifax-based multi-diciplinary engineering, manufacturing, and construction company. Our professional employees are passionate about their work, and have experience spanning many fields and projects. We excel in areas where there isn't an established presence in the marketplace - we de well at things that others don't do, and also where there is a benefit to integrating most or all aspects of a job. Our staff are designers at heart - innovation is weaved in to out business processes. We may not be competetive for a 12-foot span beam design and install, but we have the expertise to replace 30 feet of load-bearing wall to open up te main floor of a house. We don't build standard buildings like tilt-up or pre-engineered steel - but we will design and build a modern post-framed building with better energy performance and a much lower carbon footprint. We've designed products for third parties from scratch that our customers have built multi-million dollar businesses from. We are innovators with diverse, direct experience in most engineering diciplines.</p>
+                <p>Well Engineered is a Halifax-based multi-disciplinary engineering, manufacturing, and construction company. Our professional employees are passionate about their work, and have experience spanning many fields and projects. We excel in areas where there isn't an established presence in the marketplace - we do well at things that others don't do, and also where there is a benefit to integrating most or all aspects of a job. Our staff are designers at heart - innovation is weaved in to out business processes. We may not be competetive for a 12-foot span beam design and install, but we have the expertise to replace 30 feet of load-bearing wall to open up te main floor of a house. We don't build standard buildings like tilt-up or pre-engineered steel - but we will design and build a modern post-framed building with better energy performance and a much lower carbon footprint. We've designed products for third parties from scratch that our customers have built multi-million dollar businesses from. We are innovators with diverse, direct experience in most engineering diciplines.</p>
                 <a href="contact.html" class="btn btn-primary mt-3">Contact Us</a>
             </div>
             <!-- Text Column -->
@@ -135,116 +145,116 @@
     <div class="container text-center">
         <h2>How we can help you</h2>
         <div class="row mt-4">
-            <!-- Service Card 1 -->
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <img src="img/liftframe.webp" class="card-img-top" alt="Service 1">
-                    <div class="card-body"> 
-                        <h5 class="card-title"><a href="lifting.html">Lifting & Handling Devices</a></h5>
-                        <p class="card-text">We excel in engineering custom lifting and handling devices, offering innovative, safe, and efficient solutions for various industries</p>
-                        <ul class="service-list">
-                            <li><a href="lifting.html#DNV">DNV Portable Offshore Units</a></li>
-                            <li><a href="lifting.html#B30">ASME B30 Lifting Devices</a></li>
-                            <li><a href="lifting.html">Design and Supply</a></li>
-                        </ul>
+                <!-- Service Card Accessibility -->
+                <div class="col-md-4">
+                            <div class="card service-card">
+                                <img src="img/access/malak.png" class="card-img-top" alt="Service 4">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="access.html">Accessibility</a></h5>
+                                    <p class="card-text">Well Engineered can assess requirements for new or replacement structures against by-laws and building codes.
+                                    <ul class="service-list">
+                                        <li><a href="products/skywalk.html">Skywalk Commercial Access System</a></li>
+                                        <li><a href="access.html#multi">Multi-storey commercial and residential access and escape</a></li>
+                                        <li><a href="access.html#more">Stairs, Slides, More</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </div>
+                <!-- Service Card Industrial -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/p003.jpg" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="industrial.html">Industrial Equipment & Structures</a></h5>
+                            <p class="card-text">Whether you require a conceptual design, a comprehensive detailed design with full documentation, or a complete turn-key solution, we’ve got you covered—from initial concept to final delivery and commissioning at your facility.
+                            </p>
+                            <ul class="service-list">
+                                <li><a href="industrial.html#customI">Custom Designs of Industrial Equipment</a></li>
+                                <li><a href="industrial.html#comis">Equipment Commissioning</a></li>
+                                <li><a href="industrial.html">Shop Drawings</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Service Card 2 -->
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <img src="img/framing3.jpg" class="card-img-top" alt="Service 2">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="designbuild.html">Design / Build Construction</a></h5>
-                        <p class="card-text">Well Engineered designs and builds post-frame Buildings, 
-                            providing precise Shop Drawings stamped by a P.Eng in Nova Scotia with all necessary design details.</p>
-                        <ul class="service-list">
-                            <li><a href="designbuild.html#commercial">Commercial Buildings</a></li>
-                            <li><a href="designbuild.html#residential">Residential Buildings</a></li>
-                            <li><a href="designbuild.html#drawings">Structural & Miscellaneous Steel</a></li>
-                        </ul>
+                <!-- Service Card FA -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/fa/IMG_0969.JPG" class="card-img-top" alt="Service 4">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="fa.html">Factory Automation</a></h5>
+                            <p class="card-text">Our staff understand automation problems at their core: the process. We’ve developed automation solutions for several processes, including working with collaborative robots or “cobots”.
+                            <ul class="service-list">
+                                <li><a href="fa.html">Process Developement / Automation</a></li>
+                                <li><a href="fa.html#robot">Collaborative Robot Integration</a></li>
+                                <li><a href="fa.html">Improvements and Repairs</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Service Card 3 -->
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <img src="img/p003.jpg" class="card-img-top" alt="Service 3">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="industrial.html">Industrial Equipment & Structures</a></h5>
-                        <p class="card-text">Whether you require a conceptual design, a comprehensive detailed design with full documentation, or a complete turn-key solution, we’ve got you covered—from initial concept to final delivery and commissioning at your facility.
-                        </p>
-                        <ul class="service-list">
-                            <li><a href="industrial.html#customI">Custom Designs of Industrial Equipment</a></li>
-                            <li><a href="industrial.html#comis">Equipment Commissioning</a></li>
-                            <li><a href="industrial.html">Shop Drawings</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                </div>  
         </div>
         <!-- Second Row of Service Cards -->
         <div class="row mt-4">
-            <!-- Service Card 4 -->
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <img src="img/access/malak.png" class="card-img-top" alt="Service 4">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="access.html">Accessibility</a></h5>
-                        <p class="card-text">Well Engineered can assess requirements for new or replacement structures against by-laws and building codes.
-                        <ul class="service-list">
-                            <li><a href="access.html">Ramps and Stairs</a></li>
-                            <li><a href="access.html#skywalk">SkyWalk Floating Ramp System</a></li>
-                            <li><a href="access.html">Design and Build</a></li>
-                        </ul>
+                <!-- Service Card Design and Build -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/framing3.jpg" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="designbuild.html">Design / Build Construction</a></h5>
+                            <p class="card-text">Well Engineered designs and builds post-frame Buildings, 
+                                providing precise Shop Drawings stamped by a P.Eng in Nova Scotia with all necessary design details.</p>
+                            <ul class="service-list">
+                                <li><a href="designbuild.html#commercial">Commercial Buildings</a></li>
+                                <li><a href="designbuild.html#residential">Residential Buildings</a></li>
+                                <li><a href="designbuild.html#drawings">Structural & Miscellaneous Steel</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-              <!-- Service Card 5 -->
-              <div class="col-md-4">
-                <div class="card service-card">
-                    <img src="img/fa/IMG_0969.JPG" class="card-img-top" alt="Service 4">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="fa.html">Factory Automation</a></h5>
-                        <p class="card-text">Our staff understand automation problems at their core: the process. We’ve developed automation solutions for several processes, including working with collaborative robots or “cobots”.
-                        <ul class="service-list">
-                            <li><a href="fa.html">Process Developement / Automation</a></li>
-                            <li><a href="fa.html#robot">Collaborative Robot Integration</a></li>
-                            <li><a href="fa.html">Improvements and Repairs</a></li>
-                        </ul>
+                <!-- Service Card Lifting and Handling -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/liftframe.webp" class="card-img-top" alt="Service 1">
+                        <div class="card-body"> 
+                            <h5 class="card-title"><a href="lifting.html">Lifting & Handling Devices</a></h5>
+                            <p class="card-text">We excel in engineering custom lifting and handling devices, offering innovative, safe, and efficient solutions for various industries</p>
+                            <ul class="service-list">
+                                <li><a href="lifting.html#DNV">DNV Portable Offshore Units</a></li>
+                                <li><a href="lifting.html#B30">ASME B30 Lifting Devices</a></li>
+                                <li><a href="lifting.html">Design and Supply</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Service Card 6 -->
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <img src="img/offshore/p070.png" class="card-img-top" alt="Service 5">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="offshore.html">Offshore / Hazardous Locations</a></h5>
-                        <p class="card-text"> We are highly experienced in product certification, with third parties such as ABS, Lloyds, DNV-GL, CSA, BV, and ETL.</p>
-                        <ul class="service-list">
-                            <li><a href="offshore.html">Certified Lift Equipment</a></li>
-                            <li><a href="offshore.html#hazard">Hazardous Location Equipment</a></li>
-                            <li><a href="offshore.html#subsea">Subsea Equipment</a></li>
-                        </ul>
+                <!-- Service Card Offshore -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/offshore/p070.png" class="card-img-top" alt="Service 5">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="offshore.html">Offshore / Hazardous Locations</a></h5>
+                            <p class="card-text"> We are highly experienced in product certification, with third parties such as ABS, Lloyds, DNV-GL, CSA, BV, and ETL.</p>
+                            <ul class="service-list">
+                                <li><a href="offshore.html">Certified Lift Equipment</a></li>
+                                <li><a href="offshore.html#hazard">Hazardous Location Equipment</a></li>
+                                <li><a href="offshore.html#subsea">Subsea Equipment</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Service Card 7 -->
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <img src="img/productslogo.webp" class="card-img-top" alt="Service 6">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="products.html">Products</a></h5>
-                        <p class="card-text">Visit our online store or order your custom product</p>
-                        <ul class="service-list">
-                            <li><a href="products.html">Industrial Equipment</a></li>
-                            <li><a href="products.html">Aviation</a></li>
-                            <li><a href="products.html">Other </a></li>
-                        </ul>
+                <!-- Service Card Products -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/productslogo.webp" class="card-img-top" alt="Service 6">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="products.html">Products</a></h5>
+                            <p class="card-text">Visit our online store or order your custom product</p>
+                            <ul class="service-list">
+                                <li><a href="products.html">Industrial Equipment</a></li>
+                                <li><a href="products.html">Aviation</a></li>
+                                <li><a href="products.html">Other </a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 </section>
@@ -390,23 +400,21 @@
                     <h4>Menu</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#clients">Our Clients</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="sitemap-links">
                     <h4>Services</h4>
-                    <ul>
-                        <li><a href="lifting.html">Lifting and Handling Equipment</a></li>
-                        <li><a href="designbuild.html">Design/Build Construction</a></li>
-                        <li><a href="industrial.html">Industrial Equipment</a></li>
+                    <ul>                        
+                        <li><a href="fa.html">Factory Automation</a></li>
                         <li><a href="access.html">Accessibility</a></li>
+                        <li><a href="industrial.html">Industrial Equipment</a></li>
+                        <li><a href="designbuild.html">Design/Build Construction</a></li>
+                        <li><a href="lifting.html">Lifting and Handling Equipment</a></li>                        
                         <li><a href="offshore.html">Offshore/Hazardous Locations</a></li>
                     </ul>
                 </div>
@@ -416,8 +424,8 @@
                     <!-- Logo -->
                     <img src="img/Logo_Website_Transparent.webp" alt="Your Company Logo" class="img-fluid mb-3" style="max-width: 150px;"> <!-- Adjust max-width as needed -->
                     <p><strong>Email:</strong> sales@wellengineered.ca</p>
-                    <p><strong>Phone:</strong> +1 (234) 567-890</p>
-                    <p><strong>Address:</strong> 121 Ilsley Ave unit 114, Dartmouth</p>
+                    <p><strong>Phone:</strong> 902-901-2500. </p>
+                    <p><strong>Address:</strong> 121 Ilsley Ave unit 114, Dartmouth, NS, B3B 1S4</p>
                     <p><strong>Office Hours:</strong> Mon-Fri: 9 AM - 5 PM</p>
                 </div>
             </div>

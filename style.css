@@ -194,6 +194,10 @@ body, h1, h2, h3, p, a {
     background-color: rgba(16, 16, 16, 0.5) ;
 }
 
+.heroA a{
+    color: white;
+}
+
 .heroA .btn-primary, .heroA .btn-secondary {
     font-size: 1.1rem;
     padding: 0.7rem 1.5rem;
