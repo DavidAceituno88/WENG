@@ -29,7 +29,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="../industrialprd.html">Industrial Equipment</a></li>
-                        <li><a class="dropdown-item" href="./aviationprd.html">Aviation</a></li>
+                        <li><a class="dropdown-item" href="../aviationprd.html">Aviation</a></li>
                         <li><a class="dropdown-item" href="../othersprd.html">Other</a></li>
                         <!-- Add more services as needed -->
                     </ul>
@@ -104,10 +104,28 @@
                 <!-- Product Pricing -->
                 <div class="product-price">
                     <span></span>
-                    <a href="../contact.html" class="cart-btn">Let's talk about your hitch adapter</a>
+                    <button class="cart-btn" onclick="openForm()">Order Now.</a>
                 </div>
             </div>
         </div>
+        <div class="overlay" id="overlay">
+            <div class="popup-form" id="popupForm">
+                <h3>Place Your Order</h3>
+                <form action="mailto:sales@wellengineered.ca" method="post" enctype="text/plain">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" value="Sailplane Autotow Hitch Adapter Order" readonly>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <label for="email">Your Email: (*required)</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <label for="Message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                    <button type="button" class="close-btn" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+                        </div>
+        <script src="form.js"></script>
     </main>
 
  
