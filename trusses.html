@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Well Engineered</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="../prodStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM2E85/5g0t1eI5R0AT6r8mo7G8hf/F+9gH6k+6" crossorigin="anonymous">
+    <script src="zoom.js" defer></script>
+    <link href="../style.css" rel="stylesheet"> <!-- Link to the external CSS file -->
+</head>
+<body style="background-color: white;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../img/Logo_Website_Transparent.webp" alt="WellEngineered" width="60%" height="60%" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#products">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../industrialprd.html">Industrial Equipment</a></li>
+                            <li><a class="dropdown-item" href="../aviationprd.html">Aviation</a></li>
+                            <li><a class="dropdown-item" href="../othersprd.html">Other</a></li>
+                            <!-- Add more services as needed -->
+                        </ul>
+                    </li>
+                    <!-- Services Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../access.html">Accessibility</a></li>
+                            <li><a class="dropdown-item" href="../industrial.html">Industrial Equipment & Structures</a></li>
+                            <li><a class="dropdown-item" href="../fa.html">Factory Automation</a></li>
+                            <li><a class="dropdown-item" href="../designbuild.html">Design/Build Construction</a></li>
+                            <li><a class="dropdown-item" href="../lifting.html">Lifting & Handling Devices</a></li>
+                            <li><a class="dropdown-item" href="../offshore.html">Surface and Subsea Marine</a></li>
+                            <!-- Add more services as needed -->
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="containerm">
+        <div class="row">
+            <!-- Left Column / Product Carousel -->
+            <div class="col-md-6">
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/designBuild/garageplans.jpg" class="d-block w-100 carousel-image" alt="Project 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="../img/access/malak.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/designBuild/garage (5).jpg" class="d-block w-100 carousel-image" alt="Project 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="../img/access/rampdraw.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/designBuild/garage (6).jpg" class="d-block w-100 carousel-image" alt="Project 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="../img/access/rampdraw.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/designBuild/garage (1).jpg" class="d-block w-100 carousel-image" alt="Project 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="../img/access/rampdraw.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/designBuild/garage (2).jpg" class="d-block w-100 carousel-image" alt="Project 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="../img/access/rampdraw.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/designBuild/garage (3).jpg" class="d-block w-100 carousel-image" alt="Project 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="../img/access/rampdraw.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/designBuild/garage (4).jpg" class="d-block w-100 carousel-image" alt="Project 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="../img/access/rampdraw.png">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+              
+                <!-- Thumbnails Below Carousel -->
+                <div class="carousel-thumbnails">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../img/designBuild/garageplans.jpg" class="thumbnail-img" alt="Thumbnail 1" data-bs-target="#projectCarousel" data-bs-slide-to="0">
+                        </div>
+                        <div class="col-2">
+                            <img src="../img/designBuild/garage (5).jpg" class="thumbnail-img" alt="Thumbnail 2" data-bs-target="#projectCarousel" data-bs-slide-to="1">
+                        </div>
+                        <div class="col-2">
+                            <img src="../img/designBuild/garage (6).jpg" class="thumbnail-img" alt="Thumbnail 3" data-bs-target="#projectCarousel" data-bs-slide-to="2">
+                        </div>
+                        <div class="col-2">
+                            <img src="../img/designBuild/garage (1).jpg" class="thumbnail-img" alt="Thumbnail 4" data-bs-target="#projectCarousel" data-bs-slide-to="3">
+                        </div>
+                        <div class="col-2">
+                            <img src="../img/designBuild/garage (2).jpg" class="thumbnail-img" alt="Thumbnail 5" data-bs-target="#projectCarousel" data-bs-slide-to="4">
+                        </div>
+                        <div class="col-2">
+                            <img src="../img/designBuild/garage (3).jpg" class="thumbnail-img" alt="Thumbnail 6" data-bs-target="#projectCarousel" data-bs-slide-to="5">
+                        </div>
+                        <div class="col-2">
+                            <img src="../img/designBuild/garage (4).jpg" class="thumbnail-img" alt="Thumbnail 7" data-bs-target="#projectCarousel" data-bs-slide-to="6">
+                        </div>
+                    </div>
+                </div>
+              </div>
+    
+            <!-- Right Column -->
+            <div class="col-md-6">
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Residential Construction</span>
+                <h1>Full-span attic truss buildings - 34x36 footprint</h1>
+                <p>Well Engineered has designed a residential building that is easily configurable to your needs. It’s a two-story structure with no load bearing walls on the main floor, and 2 load bearing walls upstairs on 12 foot centres. The result is a building that can be configured to all living space, or a 2 bedroom flat over a large garage, or anything in between.</p>
+                <p>We can offer the building turn-key, or we can provide the engineering and specialized framing materials while working with your contractors to specify suitable foundation and finishing details to suit your needs.</p>
+                <p>A starting price of $XXXXX includes the following (this price for a site within 45 mins of Dartmouth, NS - please check with us for a cost for sites farther away):</p>
+            <ul>
+                <li>Full building plans (structural, architectural, electrical, plumbing, HVAC) per an existing design.</li>
+                <li>Foundation plan specific to your site.</li>
+                <li>All primary structural materials and hardware for all floors and exterior walls including trusses, posts, metal connectors, post brackets for the footings.</li>
+                <li>Assembly of framing package on site</li>
+                <li>Engineering inspections to building completion (plumbing, HVAC, electrical, insulation, final).</li>
+               
+            </ul>
+            
+            <p>At this stage the building is ready for sheathing and subfloor - all primary framing is complete. Typical lead time for this building package is 3 weeks for a package to submit for a building permit, 8 weeks to framing complete. Note that all other processes must be carried out in sequence (permit approval, site and foundation work).</p>
+        
+            </div>
+    
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span></span>
+                    <a href="../contact.html" class="cart-btn">Let's talk about your Builing</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ 
+<!--Conctact section-->
+<section class="contact-us">
+    <div class="cnt-container">
+        <div class="cnt-info"><h1>Contact Us</h1>
+        <p>Submit your inquiry or send us an <a href="mailto:sales@wellengineered.com" style="color: blue;">email</a> and we will contact you.</p>
+        <a href="../contact.html" class="btn btn-outline-primary">Contact Us</a></div>
+        
+    </div>
+</section>
+  
+  <!-- Our Clients Section -->
+  <div class="slider-containerC">
+    <h2>Our Clients</h2>
+    <div class="sliderC"    >
+        <!-- Add your images here -->
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174131.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174148.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174204.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174223.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174234.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174300.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174319.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174335.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174348.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/Screenshot 2024-12-10 174400.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (1).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (2).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (3).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (4).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (5).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (6).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (7).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/weldpro.png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (9).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (10).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (11).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (12).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (13).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (14).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (15).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (16).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (17).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (18).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (19).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (20).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (21).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (22).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (23).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (24).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (25).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (26).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (27).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (28).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (30).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (31).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (32).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (33).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (34).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (35).png" alt="Client"></div>
+            <div class="slideC"><img src="../img/clients/client (36).png" alt="Client"></div>
+        <!-- Continue adding more images as needed -->
+    </div>
+  
+    <div class="buttonsC">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+    </div>
+  </div>
+  <script src="../clients.js"></script>
+  
+ <!-- Sitemap Section -->
+<section id="sitemap" class="bg-dark py-5">
+    <div class="container text-center">
+         <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="sitemap-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products.html">Products</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sitemap-links">
+                    <h4>Services</h4>
+                    <ul>                        
+                        <li><a href="../fa.html">Factory Automation</a></li>
+                        <li><a href="../access.html">Accessibility</a></li>
+                        <li><a href="../industrial.html">Industrial Equipment</a></li>
+                        <li><a href="../designbuild.html">Design/Build Construction</a></li>
+                        <li><a href="../lifting.html">Lifting and Handling Equipment</a></li>                        
+                        <li><a href="../offshore.html">Surface and Subsea Marine</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info1">
+                    <!-- Logo -->
+                    <img src="../img/Logo_Website_Transparent.webp" alt="Your Company Logo" class="img-fluid mb-3" style="max-width: 150px;"> <!-- Adjust max-width as needed -->
+                    <p><strong>Email:</strong> sales@wellengineered.ca</p>
+                    <p><strong>Phone:</strong> 902-901-2500. </p>
+                    <p><strong>Address:</strong> 121 Ilsley Ave unit 114, Dartmouth, NS, B3B 1S4</p>
+                    <p><strong>Office Hours:</strong> Mon-Fri: 9 AM - 5 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <p style="color: azure;">&copy; 2024 Engineering Company. All Rights Reserved.</p>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
