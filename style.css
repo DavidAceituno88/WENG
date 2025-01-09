@@ -1917,6 +1917,7 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
     flex-direction: row;
     align-items: center;
     background: #fff;
+    position: relative;
 }
 
 /* Category Span */
@@ -1931,6 +1932,7 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
     border-radius: 4px;
     z-index: 5;
     text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .product-image {
@@ -1951,7 +1953,6 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
 .product-details {
     flex: 1;
     padding: 20px;
-    padding-right: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2019,7 +2020,7 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
     right: 10px;
 }
 
-/* Hover Effect */
+/* Prevent overlap with content */
 .carousel-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -2063,6 +2064,13 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
         font-size: 0.9em;
         padding-right: 0;
     }
+
+    .product-category {
+        top: 5px;
+        left: 5px;
+        font-size: 0.8em;
+        padding: 3px 6px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2087,6 +2095,13 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
 
     .product-details p {
         font-size: 0.8em;
+    }
+
+    .product-category {
+        top: 2px;
+        left: 2px;
+        font-size: 0.7em;
+        padding: 2px 4px;
     }
 }
 
