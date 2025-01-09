@@ -1885,3 +1885,226 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
 .fullscreen-modal img:hover {
     cursor: default;
 }
+
+
+/* Carousel Container */
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 80%;
+    margin: 40px auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Track */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Product Card */
+.product-card {
+    height: 400px;
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: relative;
+}
+
+/* Category Span */
+.product-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: dodgerblue;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 5;
+    text-transform: uppercase;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-details h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: left;
+}
+
+.product-details p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+.quote-btn {
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: auto; /* Align to the bottom */
+}
+
+.quote-btn:hover {
+    background-color: silver;
+}
+
+/* Navigation Buttons */
+/* Base Styles for Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 10; /* Higher to stay on top of images but not text */
+    font-size: 1.5em;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+/* Adjust button positioning */
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Hover Effect */
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2em;
+        padding: 8px 12px;
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+
+    .prev-btn {
+        left: 2px;
+    }
+
+    .next-btn {
+        right: 2px;
+    }
+}
+
+/* Hide buttons on very small screens if necessary */
+@media (max-width: 320px) {
+    .carousel-btn {
+        display: none;
+    }
+}
+
+/* Section Styling */
+.featured-products {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Stylish Section Title */
+.section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Decorative Line Under Title */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: dodgerblue;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Responsive Title Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5em;
+    }
+}
