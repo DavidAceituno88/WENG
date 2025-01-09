@@ -1956,6 +1956,7 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 50px; /* Ensure spacing from buttons */
 }
 
 .product-details h2 {
@@ -2001,7 +2002,7 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
     border: none;
     cursor: pointer;
     padding: 10px 15px;
-    z-index: 10; /* Higher to stay on top of images but not text */
+    z-index: 10; /* Ensure it does not overlap text unnecessarily */
     font-size: 1.5em;
     border-radius: 4px;
     display: flex;
@@ -2013,11 +2014,11 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
 
 /* Adjust button positioning */
 .prev-btn {
-    left: 10px;
+    left: -50px; /* Offset outward */
 }
 
 .next-btn {
-    right: 10px;
+    right: -50px; /* Offset outward */
 }
 
 /* Prevent overlap with content */
@@ -2032,14 +2033,15 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
         height: 35px;
         font-size: 1.2em;
         padding: 8px 12px;
+        z-index: 5; /* Lower than category */
     }
 
     .prev-btn {
-        left: 5px;
+        left: -30px;
     }
 
     .next-btn {
-        right: 5px;
+        right: -30px;
     }
 
     .product-card {
@@ -2070,10 +2072,14 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
         left: 5px;
         font-size: 0.8em;
         padding: 3px 6px;
+        z-index: 10; /* Ensure it stays on top of the image but below buttons */
     }
 }
 
+
 @media (max-width: 480px) {
+    
+    
     .carousel-btn {
         width: 30px;
         height: 30px;
@@ -2082,13 +2088,17 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
     }
 
     .prev-btn {
-        left: 2px;
+        left: -1px;
     }
 
     .next-btn {
-        right: 2px;
+        right: -1px;
     }
 
+    .product-details{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     .product-details h2 {
         font-size: 1em;
     }
