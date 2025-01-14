@@ -2014,11 +2014,11 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
 
 /* Adjust button positioning */
 .prev-btn {
-    left: -50px; /* Offset outward */
+    left: 10px; /* Offset outward */
 }
 
 .next-btn {
-    right: -50px; /* Offset outward */
+    right: 10px; /* Offset outward */
 }
 
 /* Prevent overlap with content */
@@ -2037,11 +2037,11 @@ input[type="radio"]:nth-of-type(8):checked ~ .images img:nth-of-type(8) {
     }
 
     .prev-btn {
-        left: -30px;
+        left: -10px;
     }
 
     .next-btn {
-        right: -30px;
+        right: -10px;
     }
 
     .product-card {
