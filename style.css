@@ -236,6 +236,38 @@ body, h1, h2, h3, p, a {
     }
 }
 
+/*Concrete Hero*/
+/* Design Build Construction hero */
+.heroConc {
+    padding-top: 70px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position:50% calc(50% + (35% - 50%) * var(--bg-alignment-factor));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("https://private-us-east-1.manuscdn.com/sessionFile/yi7Mu2ZID4X1I18Xc15C9P/sandbox/DjPldjODiaOmtO9xax36hr-img-1_1770822393000_na1fn_aGVyby1qb2ludGxlc3MtZmxvb3I.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUveWk3TXUyWklENFgxSTE4WGMxNUM5UC9zYW5kYm94L0RqUGxkak9EaWFPbXRPOXhheDM2aHItaW1nLTFfMTc3MDgyMjM5MzAwMF9uYTFmbl9hR1Z5YnkxcWIybHVkR3hsYzNNdFpteHZiM0kucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=f7-g4V0oNJ7wIwWEHMwyrw~NY~i~Tobi9pSGUkyEfRuYr4Y~M0Q5YIT5Y2BTwbCcNN0cep9gjh36iHUSRbACJ8T6EB88wvDb6AP3apueFX~ZiB5MTy4wj-tsFFQsx9qznT3wuE1XPjImeWKNkK8-0-taWT2JQq5VrW7hMb7M7f8HrPkcQ4BzS9SR97QC8gta8Pqj62oNWZcTB1P6s-m4ngog5wfin7YfSXaKfysiIMmC2wdkZ9nWIfDEOjHRUn6ZVL~rj-qMp4zan4vVS0gb9pqgyn73qKRJo-BfMoCvnYOM4uf31AsK1tyvd8mxgmyOjWvkZBOdGeAuagKNxmtreQ__");
+    
+}
+
+.heroConc h1 {
+    font-size: calc(3.3rem ); /* Responsive font size */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.0);
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in; /* Fade-in animation */
+    width: 100%;
+}
+
+.heroConc p {
+    font-size: calc(1rem + 0.5vw); /* Responsive font size */
+    color: #ddd;
+    animation: fadeIn 0.5s ease-in;
+    
+}
 
 /* Design Build Construction hero */
 .heroCon {
@@ -514,6 +546,95 @@ h1, h2, h3 {
     color: #b0b0b0;
     margin-bottom: 1rem;
 }
+
+/*Concrete card */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 32px;
+}
+
+.cardc {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+  position: relative;
+  
+}
+
+.cardc:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: rgba(133, 170, 238, 0.325);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.card-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.cardc h3 {
+  margin: 0 0 8px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-size: 1.25rem;
+  color: #222;
+  text-align: left;
+}
+
+.cardc p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+/*Concrete List*/
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 3%;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  
+}
+
+.check-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: green;
+  font-weight: bold;
+}
+
 
 /* Service List Styling */
 .service-list {
@@ -1075,6 +1196,30 @@ footer p {
 }
 
 /* Base Styles for Containers */
+
+/*Container concrete*/
+.containerConc {
+    background-color: #1e62ff;
+    overflow: clip;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 5rem;
+    width: 100%;
+    margin-bottom: 0px;
+ }
+.containerConc h1 {
+    color: white;
+}
+
+.containerConc p {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: larger;
+}
+
 .containerAH {
     --bg-color: radial-gradient(
         circle at 50% 100%,
