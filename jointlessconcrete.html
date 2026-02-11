@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM2E85/5g0t1eI5R0AT6r8mo7G8hf/F+9gH6k+6" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"> <!-- Link to the external CSS file -->
+   
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/Logo_Website_Transparent.webp" alt="WellEngineered" width="60%" height="60%" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#products">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="industrialprd.html">Industrial Equipment</a></li>
+                            <li><a class="dropdown-item" href="aviationprd.html">Aviation</a></li>
+                            <li><a class="dropdown-item" href="othersprd.html">Other</a></li>
+                            <!-- Add more services as needed -->
+                        </ul>
+                    </li>
+                    <!-- Services Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="access.html">Accessibility</a></li>
+                            <li><a class="dropdown-item" href="industrial.html">Industrial Equipment & Structures</a></li>
+                            <li><a class="dropdown-item" href="fa.html">Factory Automation</a></li>
+                            <li><a class="dropdown-item" href="designbuild.html">Design/Build Construction</a></li>
+                            <li><a class="dropdown-item" href="lifting.html">Lifting & Handling Devices</a></li>
+                            <li><a class="dropdown-item" href="offshore.html">Surface and Subsea Marine</a></li>
+                            <li><a class="dropdown-item" href="architectual.html">Building Conversions and Architecture</a></li>
+                            <!-- Add more services as needed -->
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section class="heroConc">
+    <div class="hero-image">
+        <div class="hero-content">
+            <h1>Superior Concrete Flooring for Modern Industry</h1>
+            <p style="background-color:rgba(47, 79, 79, 0.1)">Jointless steel fiber reinforced slabs engineered for durability, performance, and minimal maintenance </p>
+            <a href="projects/daycare.html" class="btn btn-primary">Explore Our Projects</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </div>
+</section> 
+
+
+<!-- Concrete description and picture -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <!-- Concrete Text-->
+            <div class="col-md-6">
+                <h2>What Makes Jointless Concrete Different</h2>
+                <p>Jointless concrete slabs represent a revolutionary approach to industrial flooring. Unlike traditional saw-cut concrete floors that develop weak points at joints, jointless systems eliminate these vulnerabilities through intelligent engineering and advanced reinforcement techniques.</p>  
+                <p>Our solutions combine steel fiber reinforcement with strategic sliding layers and engineered joint profiles to create floors that perform exceptionally under demanding conditions.</p>
+                <a href="contact.html" class="btn btn-primary mt-3">Contact Us</a>
+            </div>
+            <!-- Picture Column -->
+            <div class="col-md-6">
+                <picture class="promo-art">
+                    <img src="https://private-us-east-1.manuscdn.com/sessionFile/yi7Mu2ZID4X1I18Xc15C9P/sandbox/DjPldjODiaOmtO9xax36hr-img-1_1770822393000_na1fn_aGVyby1qb2ludGxlc3MtZmxvb3I.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUveWk3TXUyWklENFgxSTE4WGMxNUM5UC9zYW5kYm94L0RqUGxkak9EaWFPbXRPOXhheDM2aHItaW1nLTFfMTc3MDgyMjM5MzAwMF9uYTFmbl9hR1Z5YnkxcWIybHVkR3hsYzNNdFpteHZiM0kucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=f7-g4V0oNJ7wIwWEHMwyrw~NY~i~Tobi9pSGUkyEfRuYr4Y~M0Q5YIT5Y2BTwbCcNN0cep9gjh36iHUSRbACJ8T6EB88wvDb6AP3apueFX~ZiB5MTy4wj-tsFFQsx9qznT3wuE1XPjImeWKNkK8-0-taWT2JQq5VrW7hMb7M7f8HrPkcQ4BzS9SR97QC8gta8Pqj62oNWZcTB1P6s-m4ngog5wfin7YfSXaKfysiIMmC2wdkZ9nWIfDEOjHRUn6ZVL~rj-qMp4zan4vVS0gb9pqgyn73qKRJo-BfMoCvnYOM4uf31AsK1tyvd8mxgmyOjWvkZBOdGeAuagKNxmtreQ__" height="800" width="800" alt="concrete slab jointless">
+                </picture>            
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!-- Services Section1 -->
+<section id="services" class="bg-light py-5 section-spacing">
+    <div class="container text-center">
+        <h2>Why Choose Jointless Concrete Slabs</h2>
+        <H4>Superior performance across every dimension</H4>
+          <div class="card-grid">
+
+    <article class="cardc">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-6 h-6 text-blue-700" data-loc="client/src/pages/Home.tsx:134"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+      </div>
+      <h3>Unmatched Durability</h3>
+      <p>Eliminates weak points created by traditional saw-cut joints. Steel fiber reinforcement distributes stress evenly, preventing cracking and spalling.</p>
+    </article>
+
+    <article class="cardc">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-blue-700" data-loc="client/src/pages/Home.tsx:134"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+      </div>
+      <h3>Design Flexibility</h3>
+      <p>No full-depth saw cuts means equipment placement becomes truly flexible. Racking systems and machinery can be positioned exactly where needed.</p>
+    </article>
+
+    <article class="cardc">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck w-6 h-6 text-blue-700" data-loc="client/src/pages/Home.tsx:134"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg>
+      </div>
+      <h3>Superior Load-Bearing</h3>
+      <p>Continuous structure creates a stronger, more resilient surface. Thinner slabs carry heavier loads compared to traditional concrete floors.</p>
+    </article>
+
+    <article class="cardc">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-6 h-6 text-blue-700" data-loc="client/src/pages/Home.tsx:134"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+      </div>
+      <h3>Reduced Maintenance</h3>
+      <p>Engineered joint profiles are far more resilient than conventional joints. Maintenance is limited to periodic care, not costly repairs.</p>
+    </article>
+
+       <article class="cardc">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cog w-6 h-6 text-blue-700" data-loc="client/src/pages/Home.tsx:134"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path d="M12 2v2"></path><path d="M12 22v-2"></path><path d="m17 20.66-1-1.73"></path><path d="M11 10.27 7 3.34"></path><path d="m20.66 17-1.73-1"></path><path d="m3.34 7 1.73 1"></path><path d="M14 12h8"></path><path d="M2 12h2"></path><path d="m20.66 7-1.73 1"></path><path d="m3.34 17 1.73-1"></path><path d="m17 3.34-1 1.73"></path><path d="m11 13.73-4 6.93"></path></svg>
+      </div>
+      <h3>Faster Construction</h3>
+      <p>Steel fibers mixed directly into concrete before pouring. No labor-intensive mesh placement means reduced time and simplified logistics.</p>
+    </article>
+
+       <article class="cardc">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 text-blue-700" data-loc="client/src/pages/Home.tsx:134"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+      </div>
+      <h3>Adaptable Foundation</h3>
+      <p>Works on compacted subsoil or concrete piles. Our engineering team designs solutions tailored to your specific soil conditions.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5" class="bg-light" style="background-color: white;" id="commercial">
+    <div class="container" style="padding-bottom: 5%;" >
+         <div class="container text-center" style="padding-bottom: 5%;">
+             <h2>How Jointless Concrete Works</h2>
+            <H4>Advanced engineering for superior performance</H4>
+         </div>
+
+        <div class="row align-items-center">
+            <!-- Picture Column -->
+             <div class="col-md-6">
+                <picture class="promo-art">
+                    <img src="img/concrete/diagram.webp">
+                </picture>
+            </div>
+            <!-- Text Column -->
+           <div class="col-md-6">
+                <h2>The Three-Layer System</h2>
+                <h5 style="font-weight: bold;">Concrete Surface Layer</h5>
+                <p>The top layer is a smooth, finished concrete surface engineered for durability and performance under heavy traffic and chemical exposure.</p>
+                
+                <h5 style="font-weight: bold;">Steel Fiber Reinforced Concrete</h5>
+                <p>Steel fibers are distributed evenly throughout the entire concrete matrix, providing strength in all directions. Traditional rebar is added locally in high-stress areas for targeted reinforcement.</p>
+                
+                <h5 style="font-weight: bold;">Sliding Layer</h5>
+                <p>The sliding layer reduces friction between the slab and subsoil, allowing the concrete to shrink freely during curing without restraint, preventing random cracking.</p>
+                
+                
+                <a href="contact.html" class="btn btn-secondary">Get Quote</a>
+            </div>
+        </div>
+    </div> 
+    <div class="container" style="padding-bottom: 5%;" >
+         
+        <div class="row align-items-center">
+
+             <!-- Text Column -->
+           <div class="col-md-6">
+                <h2>Joint Profiles & Load Transfer</h2>
+                <p>Large panels are separated by engineered joint profiles that allow controlled horizontal movement during shrinkage. These profiles may contain dowels or other load transfer mechanisms that enable one panel to transfer loads to the next.</p>
+                
+                <ul class="check-list">
+                    <li>Fast installation</li>
+                    <li>Durable concrete finish</li>
+                    <li>Low maintenance</li>
+                </ul>
+                
+            </div>
+
+            <!-- Picture Column -->
+             <div class="col-md-6">
+                <picture class="promo-art">
+                    <img src="img/concrete/workers.webp">
+                </picture>
+            </div>
+           
+        </div>
+    </div> 
+
+       
+</section>
+<!-- Services Section -->
+>
+<!-- Services Section -->
+<section id="services" class="bg-light py-5 section-spacing">
+    <div class="container text-center">
+        <h2>Ideal for Demanding Environments</h2>
+        <H4>Proven performance across diverse industries</H4>
+          <div class="card-grid">
+
+    <article class="cardc">
+      <h3>Logistics & Warehousing</h3>
+      <p>Modern distribution centers demand floors that handle constant heavy traffic, high racking systems, and equipment movement.</p>
+    </article>
+
+    <article class="cardc">
+      
+      <h3>Manufacturing Facilities</h3>
+      <p>Heavy machinery, vibration, and chemical exposure require floors that maintain integrity while minimizing repair downtime.</p>
+    </article>
+
+    <article class="cardc">
+
+      <h3>Cold Storage & Food Processing</h3>
+      <p>Temperature fluctuations and moisture exposure are no match for jointless concrete's superior durability.</p>
+    </article>
+
+    <article class="cardc">
+      
+      <h3>Automotive & Heavy Equipment</h3>
+      <p>High-load applications benefit from superior load-bearing capacity. Thinner slabs carry heavier loads while reducing material costs.</p>
+    </article>
+
+       <article class="cardc">
+      
+      <h3>Data Centers & Technology</h3>
+      <p>The seamless, clean appearance complements modern facility design while providing durability for mission-critical operations.</p>
+    </article>
+
+       <article class="cardc">
+      
+      <h3>Pharmaceutical & Clean Rooms</h3>
+      <p>Jointless surfaces eliminate cracks and joints where contaminants could accumulate, meeting strict cleanliness standards</p>
+    </article>
+
+  </div>
+</section>
+
+<section class="containerConc" >  
+    
+    <div class="row align-items-center">
+        <div class="container" style="text-align: center;">
+       <h1>Ready to Upgrade Your Facility?</h1>
+       <p >Contact our team today for a consultation. We'll assess your facility's needs and provide a customized solution that delivers superior performance and value.</p>
+       <a href="contact.html" class="btn ">Request a Quote</a>
+    </div>
+    
+
+    </div>
+</section>
+
+
+<!-- Features Section -->
+<section id="features" class="bg-dark py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Our Service Expertise</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-trophy" viewBox="0 0 16 16">
+                            <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z"/>
+                          </svg>
+                    </div>
+                    
+                    <h5>Comprehensive Design and Build Services</h5>
+                    <p>Well Engineered provides end-to-end solutions, combining innovative design with construction expertise to deliver durable, functional, and aesthetically pleasing structures for both residential and commercial projects.</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                            <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                          </svg> 
+                    </div>
+                    <h5>Tailored Solutions for Unique Needs</h5>
+                    <p>Whether it's residential renovations, commercial spaces, or post-frame construction, Well Engineered customizes designs and construction methods to meet each client’s specific vision and project requirements.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-shield-check" viewBox="0 0 16 16">
+                            <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                          </svg>
+                    </div>
+                    <h5>Expertise in Structural Integrity and Innovation</h5>
+                    <p>With a focus on structural upgrades, alternative construction methods, and high-quality materials, Well Engineered ensures projects are built to last, maintaining both structural integrity and visual appeal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!-- Advantages Section-->
+<section id="advantage" class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Your Advantage</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-substack" viewBox="0 0 16 16">
+                            <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
+                       </svg>
+                    </div>
+                    <h5>Integrated Design and Construction Services</h5>
+                    <p>We specialize in seamless design-build solutions that transform your vision into reality. From initial concept to final construction, our team ensures every project is expertly managed and executed to perfection. Whether you’re planning a residential renovation or a commercial building, our comprehensive design and construction services save time and ensure a stress-free experience.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-rulers" viewBox="0 0 16 16">
+                            <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1z"/>
+                          </svg>
+                    </div>
+                    <h5>Tailored and Innovative Construction Solutions</h5>
+                    <p>When you hire Well Engineered, you get customized construction services designed to meet your unique needs. Our team excels in delivering innovative building solutions, from using alternative construction methods to designing with precision and creativity. Whether it’s a post-frame structure or a modern open-concept space, we turn your ideas into reality with unmatched expertise.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                          </svg>
+                    </div>
+                    <h5>Quality and Durability You Can Trust</h5>
+                    <p>Choosing Well Engineered means prioritizing quality craftsmanship and long-lasting results. We use only the best materials and advanced techniques to ensure your project stands the test of time. From structural upgrades to precise shop drawings, every detail is meticulously handled to deliver durable and reliable structures that exceed expectations.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-shield-check" viewBox="0 0 16 16">
+                            <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                          </svg>
+                    </div>
+                    <h5>Versatile Expertise in Residential and Commercial Projects</h5>
+                    <p>Our team at Well Engineered has the experience to tackle a wide range of projects. From residential renovations that enhance your living space to commercial building design and construction, we bring versatility and innovation to every project. Trust us for everything from creating custom garages to developing industrial facilities, ensuring results that combine functionality, style, and value.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!--Conctact section-->
+<section class="contact-us">
+    <div class="cnt-container">
+        <div class="cnt-info"><h1>Contact Us</h1>
+        <p>Submit your inquiry or send us an <a href="mailto:sales@wellengineered.com" style="color: blue;">email</a> and we will contact you.</p>
+        <a href="contact.html" class="btn btn-outline-primary">Contact Us</a></div>
+        
+    </div>
+</section>
+
+
+
+<!-- Our Clients Section -->
+<div class="slider-containerC">
+    <h2>Our Clients</h2>
+    <div class="sliderC"    >
+        <!-- Add your images here -->
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174131.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174148.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174204.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174223.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174234.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174300.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174319.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174335.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174348.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/Screenshot 2024-12-10 174400.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (1).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (2).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (3).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (4).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (5).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (6).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (7).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/weldpro.png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (9).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (10).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (11).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (12).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (13).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (14).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (15).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (16).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (17).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (18).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (19).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (20).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (21).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (22).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (23).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (24).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (25).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (26).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (27).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (28).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (30).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (31).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (32).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (33).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (34).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (35).png" alt="Client"></div>
+            <div class="slideC"><img src="img/clients/client (36).png" alt="Client"></div>
+        <!-- Continue adding more images as needed -->
+    </div>
+
+    <div class="buttonsC">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+    </div>
+</div>
+<script src="clients.js"></script>
+
+<!-- Sitemap Section -->
+<section id="sitemap" class="bg-dark py-5">
+    <div class="container text-center">
+         <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="sitemap-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sitemap-links">
+                    <h4>Services</h4>
+                    <ul>                        
+                        <li><a href="fa.html">Factory Automation</a></li>
+                        <li><a href="access.html">Accessibility</a></li>
+                        <li><a href="industrial.html">Industrial Equipment</a></li>
+                        <li><a href="designbuild.html">Design/Build Construction</a></li>
+                        <li><a href="lifting.html">Lifting and Handling Equipment</a></li>                        
+                        <li><a href="offshore.html">Surface and Subsea Marine</a></li>
+                        <li><a href="architectual.html">Building Conversions and Architecture</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info1">
+                    <!-- Logo -->
+                    <img src="img/Logo_Website_Transparent.webp" alt="Your Company Logo" class="img-fluid mb-3" style="max-width: 150px;"> <!-- Adjust max-width as needed -->
+                    <p><strong>Email:</strong> sales@wellengineered.ca</p>
+                    <p><strong>Phone:</strong> 902-901-2500. </p>
+                    <p><strong>Address:</strong> 121 Ilsley Ave unit 114, Dartmouth, NS, B3B 1S4</p>
+                    <p><strong>Office Hours:</strong> Mon-Fri: 9 AM - 5 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <p style="color: azure;">&copy; 2024 Engineering Company. All Rights Reserved.</p>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
